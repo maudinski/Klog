@@ -1,5 +1,7 @@
 # Klog
 This is the source code for Klog, a raspberry-pi-powered, hardware keylogging keyboard.
+Comes with tool that takes the outputted keystrokes and pattern matches for possible username/password pairs.
+
 
 Keyboard source files have been lost.
 
