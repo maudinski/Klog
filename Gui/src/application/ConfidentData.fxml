@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="409.0" prefWidth="423.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ConfidentController">
+   <children>
+   <ImageView fitHeight="450" fitWidth="750" focusTraversable="true" layoutX="0" layoutY="0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@/application/resizer.jpg" />
+         </image>
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+         <cursor>
+            <Cursor fx:constant="NONE" />
+         </cursor>
+      </ImageView>
+      <Label blendMode="DARKEN" layoutX="142.0" layoutY="26.0" text="Confident Data" underline="true">
+         <font>
+            <Font size="23.0" />
+         </font></Label>
+      <Button fx:id="backToMain" layoutX="274.0" layoutY="340.0" mnemonicParsing="false" onAction="#backToMainC" text="Back to main">
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+         <effect>
+            <DropShadow color="#004aed" spread="0.32" />
+         </effect></Button>
+      <TextArea fx:id="confidenttexthere" layoutX="36.0" layoutY="95.0" prefHeight="210.0" prefWidth="354.0" />
+   </children>
+</AnchorPane>

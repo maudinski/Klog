@@ -1,0 +1,46 @@
+https://askubuntu.com/questions/380096/turn-on-off-bluetooth-from-shell-not-from-applet
+
+lot in here ^^
+
+
+
+rfkill block bluetooth
+
+rfkill unblock bluetooth
+
+
+
+
+
+or
+
+
+
+
+
+To stop :
+
+sudo /etc/init.d/bluetooth stop
+To start :
+
+sudo /etc/init.d/bluetooth start
+To restart :
+
+sudo /etc/init.d/bluetooth restart
+
+
+
+
+
+
+search blue tooth and turn on visibility
+
+
+
+
+
+
+
+
+
+

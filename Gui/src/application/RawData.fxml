@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.image.*?>
+
+
+<AnchorPane prefHeight="355.0" prefWidth="491.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.RawDataController">
+   <children>
+   		<ImageView fitHeight="450" fitWidth="750" focusTraversable="true" layoutX="0" layoutY="0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@/application/resizer.jpg" />
+         </image>
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+         <cursor>
+            <Cursor fx:constant="NONE" />
+         </cursor>
+      </ImageView>
+      <Button fx:id="backToMain" layoutX="350.0" layoutY="302.0" mnemonicParsing="false" onAction="#backToMainR" text="Back to main">
+         <effect>
+            <DropShadow color="#004aed" radius="10.807500000000001" spread="0.59" width="24.23" />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor></Button>
+      <Label layoutX="168.0" layoutY="30.0" prefHeight="47.0" prefWidth="141.0" text="Raw Data" underline="true">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="rawtexthere" layoutX="88.0" layoutY="88.0" prefHeight="200.0" prefWidth="315.0" />
+   </children>
+</AnchorPane>

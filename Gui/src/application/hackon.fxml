@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400" prefWidth="600" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.HackonController">
+   <children>
+      <ImageView fitHeight="450" fitWidth="750" focusTraversable="true" layoutX="0" layoutY="0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@/application/resizer.jpg" />
+         </image>
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+         <cursor>
+            <Cursor fx:constant="NONE" />
+         </cursor>
+      </ImageView>
+      <Button fx:id="confidentData" layoutX="61.0" layoutY="161.0" mnemonicParsing="false" onAction="#ConfidentData" prefHeight="101.0" prefWidth="186.0" text="Confident Data">
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+         <effect>
+            <DropShadow color="#fff0f0" />
+         </effect></Button>
+      <Button layoutX="349.0" layoutY="161.0" mnemonicParsing="false" onAction="#RawData" prefHeight="101.0" prefWidth="186.0" text="Raw Data">
+         <effect>
+            <DropShadow color="WHITE" />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor></Button>
+      <Label fx:id="lblkeyboardtheif" layoutX="192.0" layoutY="40.0" prefHeight="38.0" prefWidth="216.0" text="          Klog" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

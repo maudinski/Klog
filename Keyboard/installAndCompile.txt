@@ -1,0 +1,7 @@
+https://stackoverflow.com/questions/8792317/why-cant-i-find-conio-h-on-linux
+http://tldp.org/HOWTO/NCURSES-Programming-HOWTO/scanw.html#GETCHCLASS
+gcc file.c -lncurses 
+
+
+that's for linking 
+
